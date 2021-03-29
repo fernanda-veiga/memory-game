@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import Cards from "./Cards.js";
-import shuffle from "../shuffle.js";
-import countries from "../data/countries.js";
+import "../styles/App.css";
+import Header from "./Header";
+import Cards from "./Cards";
+import Footer from "./Footer";
+import shuffle from "../shuffle";
+import countries from "../data/countries";
 
 function App() {
   const [countryData, setCountryData] = useState(shuffle(countries));
@@ -13,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Cards countryData={countryData} shuffleCountries={shuffleCountries} />
+      <Footer />
     </div>
   );
 }
