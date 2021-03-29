@@ -8,6 +8,18 @@ import countries from "../data/countries";
 
 function App() {
   const [countryData, setCountryData] = useState(shuffle(countries));
+  const [clickedFlags, setClickedFlags] = useState([]);
+
+  function handleClick(event) {
+    storeClickedFlag(event.target.id);
+    shuffleCountries();
+  }
+
+  function storeClickedFlag(countryId) {
+    const newClickedFlags = clickedFlags.concat(countryId);
+    setClickedFlags(newClickedFlags);
+    console.log(clickedFlags);
+  }
 
   function shuffleCountries() {
     const shuffledCountryData = [...shuffle(countryData)];
@@ -17,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Cards countryData={countryData} shuffleCountries={shuffleCountries} />
+      <Cards countryData={countryData} handleClick={handleClick} />
       <Footer />
     </div>
   );
