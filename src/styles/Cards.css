@@ -19,9 +19,11 @@
 .card img {
   width: 100px;
   height: auto;
+  pointer-events: none;
 }
 
 .card p {
   font-family: "Open Sans", sans-serif;
   color: #5d7599;
+  pointer-events: none;
 }
