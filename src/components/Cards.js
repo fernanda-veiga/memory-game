@@ -10,7 +10,7 @@ function Cards(props) {
             key={country.id}
             id={country.id}
             className="card"
-            onClick={props.shuffleCountries}
+            onClick={props.handleClick}
           >
             <img
               id={country.id + "-img"}
