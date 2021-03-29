@@ -19,27 +19,27 @@ import flagSRB from "./flags/srb.png";
 import flagTUR from "./flags/tur.png";
 import flagUSA from "./flags/usa.png";
 
-const flagData = {
-  aus: { name: "Australia", flag: flagAUS, id: "aus" },
-  bel: { name: "Belgium", flag: flagBEL, id: "bel" },
-  bra: { name: "Brazil", flag: flagBRA, id: "bra" },
-  can: { name: "Canada", flag: flagCAN, id: "can" },
-  deu: { name: "Germany", flag: flagDEU, id: "deu" },
-  grc: { name: "Greece", flag: flagGRC, id: "grc" },
-  hrv: { name: "Croatia", flag: flagHRV, id: "hrv" },
-  hun: { name: "Hungary", flag: flagHUN, id: "hun" },
-  ind: { name: "India", flag: flagIND, id: "ind" },
-  isr: { name: "Israel", flag: flagISR, id: "isr" },
-  ita: { name: "Italy", flag: flagITA, id: "ita" },
-  jpn: { name: "Japan", flag: flagJPN, id: "jpn" },
-  kor: { name: "South Korea", flag: flagKOR, id: "kor" },
-  nld: { name: "Netherlands", flag: flagNLD, id: "nld" },
-  phl: { name: "Philippines", flag: flagPHL, id: "phl" },
-  pri: { name: "Puerto Rico", flag: flagPRI, id: "pri" },
-  sgp: { name: "Singapore", flag: flagSGP, id: "sgp" },
-  srb: { name: "Serbia", flag: flagSRB, id: "srb" },
-  tur: { name: "Turkey", flag: flagTUR, id: "tur" },
-  usa: { name: "United States", flag: flagUSA, id: "usa" },
-};
+const flagData = [
+  { name: "Australia", flag: flagAUS, id: "aus" },
+  { name: "Belgium", flag: flagBEL, id: "bel" },
+  { name: "Brazil", flag: flagBRA, id: "bra" },
+  { name: "Canada", flag: flagCAN, id: "can" },
+  { name: "Germany", flag: flagDEU, id: "deu" },
+  { name: "Greece", flag: flagGRC, id: "grc" },
+  { name: "Croatia", flag: flagHRV, id: "hrv" },
+  { name: "Hungary", flag: flagHUN, id: "hun" },
+  { name: "India", flag: flagIND, id: "ind" },
+  { name: "Israel", flag: flagISR, id: "isr" },
+  { name: "Italy", flag: flagITA, id: "ita" },
+  { name: "Japan", flag: flagJPN, id: "jpn" },
+  { name: "South Korea", flag: flagKOR, id: "kor" },
+  { name: "Netherlands", flag: flagNLD, id: "nld" },
+  { name: "Philippines", flag: flagPHL, id: "phl" },
+  { name: "Puerto Rico", flag: flagPRI, id: "pri" },
+  { name: "Singapore", flag: flagSGP, id: "sgp" },
+  { name: "Serbia", flag: flagSRB, id: "srb" },
+  { name: "Turkey", flag: flagTUR, id: "tur" },
+  { name: "United States", flag: flagUSA, id: "usa" },
+];
 
 export default flagData;
