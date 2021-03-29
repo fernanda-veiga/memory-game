@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cards from "./Cards.js";
 import shuffle from "../shuffle.js";
-import countries from "../data/data.js";
+import countries from "../data/countries.js";
 
 function App() {
   const [countryData, setCountryData] = useState(shuffle(countries));
