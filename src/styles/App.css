@@ -7,3 +7,14 @@
 body {
   background: #abb6c8;
 }
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.App > * {
+  background-color: blueviolet;
+}

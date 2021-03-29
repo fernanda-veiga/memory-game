@@ -1,4 +1,5 @@
 .cards-container {
+  flex: 1 1 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -6,8 +7,9 @@
 
 .card {
   padding: 10px;
-  background: #ffd7ba;
-  border: 2px solid gray;
+  background: #f7f0c6;
+  border-radius: 8px;
+  flex: 1 1 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,4 +23,5 @@
 
 .card p {
   font-family: "Open Sans", sans-serif;
+  color: #5d7599;
 }
