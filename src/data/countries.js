@@ -19,7 +19,7 @@ import flagSRB from "./flags/srb.png";
 import flagTUR from "./flags/tur.png";
 import flagUSA from "./flags/usa.png";
 
-const flagData = [
+const countries = [
   { name: "Australia", flag: flagAUS, id: "aus" },
   { name: "Belgium", flag: flagBEL, id: "bel" },
   { name: "Brazil", flag: flagBRA, id: "bra" },
@@ -42,4 +42,4 @@ const flagData = [
   { name: "United States", flag: flagUSA, id: "usa" },
 ];
 
-export default flagData;
+export default countries;
