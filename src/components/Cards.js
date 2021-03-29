@@ -1,12 +1,17 @@
+import React from "react";
 import "../styles/card.css";
-import flagData from "../data/data.js";
 
-function Cards() {
+function Cards(props) {
   return (
     <div className="cards-container">
-      {flagData.map((country) => {
+      {props.countryData.map((country) => {
         return (
-          <div key={country.id} id={country.id} className="card">
+          <div
+            key={country.id}
+            id={country.id}
+            className="card"
+            onClick={props.shuffleCountries}
+          >
             <img
               id={country.id + "-img"}
               src={country.flag}
