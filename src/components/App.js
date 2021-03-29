@@ -1,3 +1,4 @@
+import "../styles/card.css";
 import flagData from "../data/data.js";
 console.log(flagData);
 
