@@ -1,0 +1,21 @@
+header {
+  background-color: #5d7599;
+  margin-bottom: 20px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1,
+.score p {
+  color: #f7f0c6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
