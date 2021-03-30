@@ -10,7 +10,15 @@ body {
 
 .App {
   height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
+}
+
+@media (max-width: 430px) {
+  .App {
+    height: 100%;
+  }
 }

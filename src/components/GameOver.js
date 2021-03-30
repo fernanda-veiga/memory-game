@@ -1,18 +1,21 @@
 import React from "react";
-//import "../styles/Header.css";
+import "../styles/GameOver.css";
 
 function GameOver(props) {
   return (
-    <div className="GameOver">
+    <div
+      className="GameOver"
+      style={props.isGameOver ? { display: "flex" } : { display: "none" }}
+    >
       {props.isGameOver ? (
         <div>
           <p>
             {props.currentScore === 20
-              ? `Congratulations! You did ${props.currentScore} points and won the game!`
-              : `You did ${props.currentScore} points.`}
+              ? `Congratulations! You got ${props.currentScore} points and won the game!`
+              : `You got ${props.currentScore} points.`}
           </p>
           <button type="button" onClick={props.playAgain}>
-            PLAY AGAIN
+            Play Again
           </button>
         </div>
       ) : null}
