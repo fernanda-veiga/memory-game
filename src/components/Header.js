@@ -7,7 +7,7 @@ function Header(props) {
       <h1>Flags Memory Game</h1>
       <div className="score">
         <p>SCORE: {props.currentScore}</p>
-        <p>HIGH SCORE: 0</p>
+        <p>HIGH SCORE: {props.highScore}</p>
       </div>
     </header>
   );
