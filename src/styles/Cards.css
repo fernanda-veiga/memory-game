@@ -1,23 +1,20 @@
 .cards-container {
   flex: 1 1 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  padding: 16px 32px;
+  /*Grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
 .card {
-  padding: 10px;
   background: #f7f0c6;
+  padding: 10px;
   border-radius: 8px;
-  flex: 0 1 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  /*Grid*/
+  display: grid;
+  gap: 10px;
 }
 
 .card:hover {
@@ -26,34 +23,40 @@
 }
 
 .card img {
-  width: 100px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
   height: auto;
+  object-fit: cover;
   pointer-events: none;
-  transition: all 0.4s ease-in;
 }
 
 .card p {
+  display: none;
+  text-align: center;
   font-family: "Open Sans", sans-serif;
   color: #5d7599;
   pointer-events: none;
 }
 
-@media (max-width: 900px) {
-  .card img {
-    width: 100px;
-    height: 75px;
-    object-fit: cover;
-  }
-
-  .card p {
-    display: none;
+@media only screen and (min-width: 450px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-@media (max-width: 640px) {
-  .card img {
-    width: 80px;
-    height: 60px;
-    object-fit: cover;
+@media only screen and (min-width: 750px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card p {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1410px) {
+  .cards-container {
+    grid-template-columns: repeat(10, 1fr);
   }
 }

@@ -16,9 +16,3 @@ body {
   justify-content: space-between;
   gap: 20px;
 }
-
-@media (max-width: 430px) {
-  .App {
-    height: 100%;
-  }
-}
