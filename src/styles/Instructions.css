@@ -1,5 +1,5 @@
 .instructions {
-  height: 80px;
+  padding: 0px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,4 +10,5 @@
   color: #5d7599;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  text-align: center;
 }
