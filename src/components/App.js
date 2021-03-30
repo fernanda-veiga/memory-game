@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/App.css";
 import Header from "./Header";
+import Instructions from "./Instructions";
 import Cards from "./Cards";
 import Footer from "./Footer";
 import shuffle from "../shuffle";
@@ -56,6 +57,7 @@ function App() {
   return (
     <div className="App">
       <Header currentScore={currentScore} highScore={highScore} />
+      <Instructions />
       <Cards countryData={countryData} handleClick={handleClick} />
       <Footer />
     </div>

@@ -1,0 +1,13 @@
+.instructions {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions p {
+  color: #5d7599;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
