@@ -3,6 +3,7 @@ import "../styles/App.css";
 import Header from "./Header";
 import Instructions from "./Instructions";
 import Cards from "./Cards";
+import GameOver from "./GameOver";
 import Footer from "./Footer";
 import shuffle from "../shuffle";
 import countries from "../data/countries";
@@ -12,6 +13,7 @@ function App() {
   const [clickedFlags, setClickedFlags] = useState([]);
   const [currentScore, setCurrentScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [isGameOver, setIsGameOver] = useState(false);
 
   function handleClick(event) {
     const country = event.target.id;
@@ -26,9 +28,9 @@ function App() {
   }
 
   function resetGame() {
+    setIsGameOver(true);
     changeHighScore();
     setClickedFlags([]);
-    setCurrentScore(0);
   }
 
   function storeClickedFlag(countryId) {
@@ -54,11 +56,21 @@ function App() {
     setCountryData(shuffledCountryData);
   }
 
+  function playAgain() {
+    setIsGameOver(false);
+    setCurrentScore(0);
+  }
+
   return (
     <div className="App">
       <Header currentScore={currentScore} highScore={highScore} />
       <Instructions />
       <Cards countryData={countryData} handleClick={handleClick} />
+      <GameOver
+        isGameOver={isGameOver}
+        playAgain={playAgain}
+        currentScore={currentScore}
+      />
       <Footer />
     </div>
   );
