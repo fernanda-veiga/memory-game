@@ -10,6 +10,7 @@ function App() {
   const [countryData, setCountryData] = useState(shuffle(countries));
   const [clickedFlags, setClickedFlags] = useState([]);
   const [currentScore, setCurrentScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
 
   function handleClick(event) {
     const country = event.target.id;
@@ -21,6 +22,12 @@ function App() {
       changeCurrentScore();
     }
     shuffleCountries();
+  }
+
+  function resetGame() {
+    changeHighScore();
+    setClickedFlags([]);
+    setCurrentScore(0);
   }
 
   function storeClickedFlag(countryId) {
@@ -35,9 +42,10 @@ function App() {
     console.log(currentScore);
   }
 
-  function resetGame() {
-    setClickedFlags([]);
-    setCurrentScore(0);
+  function changeHighScore() {
+    if (currentScore > highScore) {
+      setHighScore(currentScore);
+    }
   }
 
   function shuffleCountries() {
@@ -47,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header currentScore={currentScore} />
+      <Header currentScore={currentScore} highScore={highScore} />
       <Cards countryData={countryData} handleClick={handleClick} />
       <Footer />
     </div>
