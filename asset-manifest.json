@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.6aa13eb5.chunk.css",
-    "main.js": "/memory-game/static/js/main.62ed4758.chunk.js",
-    "main.js.map": "/memory-game/static/js/main.62ed4758.chunk.js.map",
+    "main.css": "/memory-game/static/css/main.0d332daf.chunk.css",
+    "main.js": "/memory-game/static/js/main.df641d07.chunk.js",
+    "main.js.map": "/memory-game/static/js/main.df641d07.chunk.js.map",
     "runtime-main.js": "/memory-game/static/js/runtime-main.bb0067c4.js",
     "runtime-main.js.map": "/memory-game/static/js/runtime-main.bb0067c4.js.map",
     "static/js/2.174ae0f5.chunk.js": "/memory-game/static/js/2.174ae0f5.chunk.js",
     "static/js/2.174ae0f5.chunk.js.map": "/memory-game/static/js/2.174ae0f5.chunk.js.map",
     "index.html": "/memory-game/index.html",
-    "static/css/main.6aa13eb5.chunk.css.map": "/memory-game/static/css/main.6aa13eb5.chunk.css.map",
+    "static/css/main.0d332daf.chunk.css.map": "/memory-game/static/css/main.0d332daf.chunk.css.map",
     "static/js/2.174ae0f5.chunk.js.LICENSE.txt": "/memory-game/static/js/2.174ae0f5.chunk.js.LICENSE.txt",
-    "static/media/aus.262fdf96.png": "/memory-game/static/media/aus.262fdf96.png",
-    "static/media/bra.a35a27bb.png": "/memory-game/static/media/bra.a35a27bb.png",
-    "static/media/kor.f7e3b533.png": "/memory-game/static/media/kor.f7e3b533.png",
-    "static/media/phl.cb48f9f6.png": "/memory-game/static/media/phl.cb48f9f6.png",
-    "static/media/srb.63833cd6.png": "/memory-game/static/media/srb.63833cd6.png",
-    "static/media/usa.bf988a50.png": "/memory-game/static/media/usa.bf988a50.png"
+    "static/media/aus.ffd87d91.png": "/memory-game/static/media/aus.ffd87d91.png",
+    "static/media/bra.5d81c7a9.png": "/memory-game/static/media/bra.5d81c7a9.png",
+    "static/media/can.47754ccb.png": "/memory-game/static/media/can.47754ccb.png",
+    "static/media/hrv.134ce0f4.png": "/memory-game/static/media/hrv.134ce0f4.png",
+    "static/media/ind.23ce97d5.png": "/memory-game/static/media/ind.23ce97d5.png",
+    "static/media/isr.ecafdbe8.png": "/memory-game/static/media/isr.ecafdbe8.png",
+    "static/media/jpn.cd97fef4.png": "/memory-game/static/media/jpn.cd97fef4.png",
+    "static/media/kor.3349f87a.png": "/memory-game/static/media/kor.3349f87a.png",
+    "static/media/phl.13250c46.png": "/memory-game/static/media/phl.13250c46.png",
+    "static/media/pri.7373c5b2.png": "/memory-game/static/media/pri.7373c5b2.png",
+    "static/media/sgp.44da88a1.png": "/memory-game/static/media/sgp.44da88a1.png",
+    "static/media/srb.ec6722a2.png": "/memory-game/static/media/srb.ec6722a2.png",
+    "static/media/tur.41941eb9.png": "/memory-game/static/media/tur.41941eb9.png",
+    "static/media/usa.46c62629.png": "/memory-game/static/media/usa.46c62629.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bb0067c4.js",
     "static/js/2.174ae0f5.chunk.js",
-    "static/css/main.6aa13eb5.chunk.css",
-    "static/js/main.62ed4758.chunk.js"
+    "static/css/main.0d332daf.chunk.css",
+    "static/js/main.df641d07.chunk.js"
   ]
 }
