@@ -19,19 +19,17 @@ function App() {
     const country = event.target.id;
 
     if (clickedFlags.includes(country)) {
-      resetGame();
+      gameOver();
+      changeHighScore();
+    } else if (currentScore === 19) {
+      gameOver();
+      changeCurrentScore();
+      setHighScore(currentScore + 1);
     } else {
       storeClickedFlag(country);
       changeCurrentScore();
     }
-    checkIfHighestScore();
     shuffleCountries();
-  }
-
-  function resetGame() {
-    setIsGameOver(true);
-    changeHighScore();
-    setClickedFlags([]);
   }
 
   function storeClickedFlag(countryId) {
@@ -42,12 +40,6 @@ function App() {
   function changeCurrentScore() {
     const newScore = currentScore + 1;
     setCurrentScore(newScore);
-  }
-
-  function checkIfHighestScore() {
-    if (currentScore === 19) {
-      resetGame();
-    }
   }
 
   function changeHighScore() {
@@ -61,6 +53,11 @@ function App() {
     setCountryData(shuffledCountryData);
   }
 
+  function gameOver() {
+    setIsGameOver(true);
+    setClickedFlags([]);
+  }
+
   function playAgain() {
     setIsGameOver(false);
     setCurrentScore(0);
@@ -70,12 +67,16 @@ function App() {
     <div className="App">
       <Header currentScore={currentScore} highScore={highScore} />
       <Instructions />
-      <Cards countryData={countryData} handleClick={handleClick} />
-      <GameOver
-        isGameOver={isGameOver}
-        playAgain={playAgain}
-        currentScore={currentScore}
-      />
+      {isGameOver ? (
+        <GameOver
+          isGameOver={isGameOver}
+          playAgain={playAgain}
+          currentScore={currentScore}
+        />
+      ) : (
+        <Cards countryData={countryData} handleClick={handleClick} />
+      )}
+
       <Footer />
     </div>
   );
