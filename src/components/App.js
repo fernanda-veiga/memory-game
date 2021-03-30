@@ -24,6 +24,7 @@ function App() {
       storeClickedFlag(country);
       changeCurrentScore();
     }
+    checkIfHighestScore();
     shuffleCountries();
   }
 
@@ -41,6 +42,12 @@ function App() {
   function changeCurrentScore() {
     const newScore = currentScore + 1;
     setCurrentScore(newScore);
+  }
+
+  function checkIfHighestScore() {
+    if (currentScore === 19) {
+      resetGame();
+    }
   }
 
   function changeHighScore() {
