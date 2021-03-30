@@ -12,8 +12,14 @@ function App() {
   const [currentScore, setCurrentScore] = useState(0);
 
   function handleClick(event) {
-    storeClickedFlag(event.target.id);
-    changeCurrentScore();
+    const country = event.target.id;
+
+    if (clickedFlags.includes(country)) {
+      resetGame();
+    } else {
+      storeClickedFlag(country);
+      changeCurrentScore();
+    }
     shuffleCountries();
   }
 
@@ -27,6 +33,11 @@ function App() {
     const newScore = currentScore + 1;
     setCurrentScore(newScore);
     console.log(currentScore);
+  }
+
+  function resetGame() {
+    setClickedFlags([]);
+    setCurrentScore(0);
   }
 
   function shuffleCountries() {
