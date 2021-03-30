@@ -12,6 +12,8 @@ function GameOver(props) {
           <p>
             {props.currentScore === 20
               ? `Congratulations! You got ${props.currentScore} points and won the game!`
+              : props.currentScore === 1
+              ? `You got ${props.currentScore} point.`
               : `You got ${props.currentScore} points.`}
           </p>
           <button type="button" onClick={props.playAgain}>
