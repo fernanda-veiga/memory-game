@@ -16,6 +16,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.card:hover {
+  background: #dadada;
+  box-shadow: 0 0 10px gray;
 }
 
 .card img {
