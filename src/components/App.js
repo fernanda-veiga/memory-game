@@ -36,13 +36,11 @@ function App() {
   function storeClickedFlag(countryId) {
     const newClickedFlags = clickedFlags.concat(countryId);
     setClickedFlags(newClickedFlags);
-    console.log(clickedFlags);
   }
 
   function changeCurrentScore() {
     const newScore = currentScore + 1;
     setCurrentScore(newScore);
-    console.log(currentScore);
   }
 
   function changeHighScore() {
